@@ -30,7 +30,7 @@ pipeline {
             agent {
                 docker {
                     // image 'cdrx/pyinstaller-linux:python2'
-                    image 'local-pyinstaller'
+                    image 'drushing/old-pyinstaller:latest'
                 }
             }
             steps {
