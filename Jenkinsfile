@@ -3,9 +3,6 @@ pipeline {
     options {
         skipStagesAfterUnstable()
     }
-    script {
-        System.setProperty("org.jenkinsci.plugins.durabletask.BourneShellScript.LAUNCH_DIAGNOSTICS", "true");
-    }
     stages {
         stage('Build') { 
             agent {
